@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foodman - Order Tasty & Fresh Food</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-container">
+            <div class="logo">
+                <svg class="logo-icon" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M3 2v7c0 1.1.9 2 2 2h4a2 2 0 0 0 2-2V2"/>
+                    <path d="M7 2v20"/>
+                    <path d="M21 15V2v0a5 5 0 0 0-5 5v6c0 1.1.9 2 2 2h3Zm0 0v7"/>
+                </svg>
+                <span class="logo-text">Food<span class="logo-highlight">man</span></span>
+            </div>
+            
+            <nav class="nav-menu" id="navMenu">
+                <a href="#why-us" class="nav-link">Why Us?</a>
+                <a href="#services" class="nav-link">Services</a>
+                <a href="#menu" class="nav-link">Menu</a>
+                <a href="#contact" class="nav-link">Contact Us</a>
+            </nav>
+
+            <div class="header-actions">
+                <button class="icon-button">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="8" cy="21" r="1"/>
+                        <circle cx="19" cy="21" r="1"/>
+                        <path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"/>
+                    </svg>
+                </button>
+                <button class="icon-button">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/>
+                        <circle cx="12" cy="7" r="4"/>
+                    </svg>
+                </button>
+                <button class="mobile-menu-toggle" onclick="toggleMenu()">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="3" y1="12" x2="21" y2="12"/>
+                        <line x1="3" y1="6" x2="21" y2="6"/>
+                        <line x1="3" y1="18" x2="21" y2="18"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    Order <span class="text-highlight">Tasty &<br>Fresh</span> Food<br>
+                    <span class="text-dark">Anytime</span><span class="dot">.</span>
+                </h1>
+                <p class="hero-description">
+                    Food taste better when you eat it with<br>your family and friends.
+                </p>
+                <button class="cta-button">Get Started</button>
+            </div>
+
+            <div class="hero-image-container">
+                <div class="hero-image-wrapper">
+                    <img 
+                        src="https://images.unsplash.com/photo-1512003867696-6d5ce6835040?w=800" 
+                        alt="Delicious noodles"
+                        class="hero-food-image"
+                    >
+                    
+                    <div class="floating-card rating-card">
+                        <div class="rating-info">
+                            <h4>Min VegEsting</h4>
+                            <p class="price">$6.50</p>
+                        </div>
+                    </div>
+
+                    <div class="floating-card customer-card">
+                        <p class="customer-text">100+ Happy Customer</p>
+                        <div class="customer-avatars">
+                            <div class="avatar" style="background-color: #FDB64E;"></div>
+                            <div class="avatar" style="background-color: #60D394;"></div>
+                            <div class="avatar" style="background-color: #EE6C4D;"></div>
+                            <div class="avatar" style="background-color: #A167A5;"></div>
+                            <div class="avatar" style="background-color: #4ECDC4;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="how-it-works-section" id="services">
+        <div class="section-container">
+            <div class="section-header">
+                <h2 class="section-title">Get Your Favorite Food in<br>Just 25 minutes</h2>
+            </div>
+            
+            <div class="steps-grid">
+                <div class="step-card">
+                    <div class="step-content">
+                        <div class="step-icon" style="background-color: #FFF4E6;">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#FDB64E" stroke-width="2">
+                                <path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/>
+                                <line x1="3" y1="6" x2="21" y2="6"/>
+                                <path d="M16 10a4 4 0 0 1-8 0"/>
+                            </svg>
+                        </div>
+                        <h3 class="step-title">Order Your Food</h3>
+                        <p class="step-description">
+                            There are many variations of pass ages of Lorem Ipsum available, but the majority have suffered.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="step-card">
+                    <div class="step-content">
+                        <div class="step-icon" style="background-color: #E8F5E9;">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#60D394" stroke-width="2">
+                                <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
+                                <polyline points="3.27 6.96 12 12.01 20.73 6.96"/>
+                                <line x1="12" y1="22.08" x2="12" y2="12"/>
+                            </svg>
+                        </div>
+                        <h3 class="step-title">Pickup Your Food</h3>
+                        <p class="step-description">
+                            There are many variations of pass ages of Lorem Ipsum available, but the majority have suffered.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="step-card">
+                    <div class="step-content">
+                        <div class="step-icon" style="background-color: #FFEBEE;">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#EE6C4D" stroke-width="2">
+                                <path d="M3 2v7c0 1.1.9 2 2 2h4a2 2 0 0 0 2-2V2"/>
+                                <path d="M7 2v20"/>
+                                <path d="M21 15V2v0a5 5 0 0 0-5 5v6c0 1.1.9 2 2 2h3Zm0 0v7"/>
+                            </svg>
+                        </div>
+                        <h3 class="step-title">Enjoy Your Food</h3>
+                        <p class="step-description">
+                            There are many variations of pass ages of Lorem Ipsum available, but the majority have suffered.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Special Dishes Section -->
+    <section class="special-dishes-section" id="menu">
+        <div class="section-container">
+            <h2 class="section-title">Our Special Dish</h2>
+            
+            <div class="dishes-grid">
+                <div class="dish-card">
+                    <div class="dish-content">
+                        <div class="dish-image-wrapper">
+                            <img src="https://images.unsplash.com/photo-1707339088654-117df66bd55c?w=400" alt="Egg Veg Mix" class="dish-image">
+                        </div>
+                        <h3 class="dish-name">Egg Veg Mix</h3>
+                        <div class="dish-rating">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="#FDB64E" stroke="#FDB64E" stroke-width="2">
+                                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+                            </svg>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="#FDB64E" stroke="#FDB64E" stroke-width="2">
+                                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+                            </svg>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="#FDB64E" stroke="#FDB64E" stroke-width="2">
+                                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+                            </svg>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="#FDB64E" stroke="#FDB64E" stroke-width="2">
+                                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+                            </svg>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="#FDB64E" stroke="#FDB64E" stroke-width="2">
+                                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+                            </svg>
+                            <span class="review-count">(200)</span>
+                        </div>
+                        <div class="dish-footer">
+                            <span class="dish-price">$9.5</span>
+                            <button class="add-button">Add Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="dish-card">
+                    <div class="dish-content">
+                        <div class="dish-image-wrapper">
+                            <img src="https://images.unsplash.com/photo-1579353446482-1005b0adea1d?w=400" alt="Egg Veg Mix" class="dish-image">
+                        </div>
+                        <h3 class="dish-name">Egg Veg Mix</h3>
+                        <div class="dish-rating">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="#FDB64E" stroke="#FDB64E" stroke-width="2">
+                                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+                            </svg>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="#FDB64E" stroke="#FDB64E" stroke-width="2">
+                                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+                            </svg>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="#FDB64E" stroke="#FDB64E" stroke-width="2">
+                                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+                            </svg>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="#FDB64E" stroke="#FDB64E" stroke-width="2">
+                                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+                            </svg>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="#FDB64E" stroke="#FDB64E" stroke-width="2">
+                                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+                            </svg>
+                            <span class="review-count">(190)</span>
+                        </div>
+                        <div class="dish-footer">
+                            <span class="dish-price">$9.5</span>
+                            <button class="add-button">Add Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="dish-card">
+                    <div class="dish-content">
+                        <div class="dish-image-wrapper">
+                            <img src="https://images.unsplash.com/photo-1512003867696-6d5ce6835040?w=400" alt="Egg Veg Mix" class="dish-image">
+                        </div>
+                        <h3 class="dish-name">Egg Veg Mix</h3>
+                        <div class="dish-rating">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="#FDB64E" stroke="#FDB64E" stroke-width="2">
+                                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+                            </svg>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="#FDB64E" stroke="#FDB64E" stroke-width="2">
+                                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+                            </svg>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="#FDB64E" stroke="#FDB64E" stroke-width="2">
+                                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+                            </svg>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="#FDB64E" stroke="#FDB64E" stroke-width="2">
+                                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+                            </svg>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="#FDB64E" stroke="#FDB64E" stroke-width="2">
+                                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+                            </svg>
+                            <span class="review-count">(195)</span>
+                        </div>
+                        <div class="dish-footer">
+                            <span class="dish-price">$9.5</span>
+                            <button class="add-button">Add Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Healthy Food Section -->
+    <section class="healthy-food-section" id="why-us">
+        <div class="section-container">
+            <div class="healthy-content-grid">
+                <div class="healthy-image-wrapper">
+                    <img 
+                        src="https://images.unsplash.com/photo-1693422660544-014dd9f3ef73?w=600" 
+                        alt="Healthy grilled steak"
+                        class="healthy-food-image"
+                    >
+                </div>
+                
+                <div class="healthy-text-content">
+                    <h2 class="section-title">We Serve Healthy &<br>Tasty Food</h2>
+                    <p class="section-description">
+                        There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration. There are many variations of passages available.
+                    </p>
+                    <button class="explore-button">Explore Story</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonial Section -->
+    <section class="testimonial-section">
+        <div class="section-container">
+            <div class="testimonial-content-grid">
+                <div class="testimonial-text">
+                    <p class="testimonial-quote">
+                        "Had dinner with boy friend. Menu is perfect, something for everyone. Service was awesome and Jason was very accommodating. Will be back definitely!"
+                    </p>
+                    <p class="testimonial-author">-Jinelia Roy</p>
+                    <div class="testimonial-rating">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="#FDB64E" stroke="#FDB64E" stroke-width="2">
+                            <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+                        </svg>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="#FDB64E" stroke="#FDB64E" stroke-width="2">
+                            <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+                        </svg>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="#FDB64E" stroke="#FDB64E" stroke-width="2">
+                            <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+                        </svg>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="#FDB64E" stroke="#FDB64E" stroke-width="2">
+                            <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+                        </svg>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="#FDB64E" stroke="#FDB64E" stroke-width="2">
+                            <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+                        </svg>
+                    </div>
+                    <div class="testimonial-nav">
+                        <button class="nav-arrow">&lt;</button>
+                        <button class="nav-arrow">&gt;</button>
+                    </div>
+                </div>
+                
+                <div class="testimonial-image-wrapper">
+                    <div class="testimonial-image-circle">
+                        <div class="testimonial-avatar"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter-section">
+        <div class="section-container">
+            <h2 class="section-title">Subscribe for Our Food Update</h2>
+            <p class="section-description">
+                There are many variations of pass ages of Lorem Ipsum available,<br>but the majority have suffered.
+            </p>
+            
+            <form onsubmit="handleSubscribe(event)" class="newsletter-form">
+                <input 
+                    type="email" 
+                    placeholder="Enter your email here"
+                    id="emailInput"
+                    class="newsletter-input"
+                    required
+                >
+                <button type="submit" class="subscribe-button">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="contact">
+        <div class="footer-container">
+            <nav class="footer-nav">
+                <a href="#why-us" class="footer-link">Why Us?</a>
+                <a href="#services" class="footer-link">Services</a>
+                <a href="#menu" class="footer-link">Menu</a>
+                <a href="#contact" class="footer-link">Contact Us</a>
+            </nav>
+            
+            <div class="social-links">
+                <a href="#" class="social-link">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+                    </svg>
+                </a>
+                <a href="#" class="social-link">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                        <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" fill="white"/>
+                        <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" stroke="white" stroke-width="2"/>
+                    </svg>
+                </a>
+                <a href="#" class="social-link">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/>
+                    </svg>
+                </a>
+            </div>
+            
+            <p class="copyright">
+                Lovingly ©️ 2025. Website Crafted by Akash Das
+            </p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
